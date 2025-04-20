@@ -1,0 +1,27 @@
+
+E
+java:S1604+"(Make this anonymous inner class a lambda(¢³…¡8çÒ›‘å2
+J
+java:S16047"(Make this anonymous inner class a lambda(ÌŒûµúÿÿÿÿ8èÒ›‘å2
+E
+java:S1604C"(Make this anonymous inner class a lambda(¸ØÈ8éÒ›‘å2
+J
+java:S1604O"(Make this anonymous inner class a lambda(ŒÎãøÿÿÿÿ8éÒ›‘å2
+E
+java:S1604["(Make this anonymous inner class a lambda(Ï¤â“8êÒ›‘å2
+J
+java:S1604g"(Make this anonymous inner class a lambda(™°øıÿÿÿÿ8êÒ›‘å2
+f
+java:S1192!"IDefine a constant instead of duplicating this literal "USERNAME" 7 times.(Ç×8øÒ›‘å2
+
+java:S1450"]Remove the "checkBmiButton" field and declare it as a local variable in the relevant methods.(İ…Ç„ÿÿÿÿÿ8“Ó›‘å2
+}
+java:S1450"[Remove the "deleteButton" field and declare it as a local variable in the relevant methods.(ŸÍãëüÿÿÿÿ8“Ó›‘å2
+}
+java:S1450"[Remove the "logoutButton" field and declare it as a local variable in the relevant methods.(Ã»üÕùÿÿÿÿ8“Ó›‘å2
+x
+java:S1450"[Remove the "updateButton" field and declare it as a local variable in the relevant methods.(˜«ä‘8“Ó›‘å2
+{
+java:S1450"YRemove the "viewButton" field and declare it as a local variable in the relevant methods.(µ›ñ«úÿÿÿÿ8•Ó›‘å2
+t
+java:S1450"WRemove the "whButton" field and declare it as a local variable in the relevant methods.(ÿ°‰8•Ó›‘å2

@@ -1,0 +1,25 @@
+
+J
+java:S1604F"(Make this anonymous inner class a lambda(ŒÎãøÿÿÿÿ8ßá›‘å2
+J
+java:S1604R"(Make this anonymous inner class a lambda(–©–Œùÿÿÿÿ8ßá›‘å2
+>
+java:S1700""Rename field "weightRecords"(…³¢Ûıÿÿÿÿ8âá›‘å2
+f
+java:S1192+"IDefine a constant instead of duplicating this literal "USERNAME" 3 times.(Ç×8ãá›‘å2
+
+java:S1450!"]Remove the "weightListView" field and declare it as a local variable in the relevant methods.(â‡À¿ùÿÿÿÿ8êá›‘å2
+~
+java:S1450""\Remove the "weightRecords" field and declare it as a local variable in the relevant methods.(…³¢Ûıÿÿÿÿ8êá›‘å2
+]	java:S125"<This block of commented-out lines of code should be removed.(ÈÀøÿÿÿÿ8îá›‘å2
+]	java:S125$"<This block of commented-out lines of code should be removed.(æì§µşÿÿÿÿ8øá›‘å2
+]	java:S125>"<This block of commented-out lines of code should be removed.(‹šÉªúÿÿÿÿ8‚â›‘å2
+c
+java:S1117_"ARename "weightRecords" which hides the field declared at line 34.(œ„¹Öÿÿÿÿÿ8Œâ›‘å2
+]	java:S125u"<This block of commented-out lines of code should be removed.(œ›Â®ùÿÿÿÿ8â›‘å2
+@
+java:S1128"Remove this duplicated import.(°şÊóøÿÿÿÿ8‘â›‘å2
+;
+java:S1128"Remove this duplicated import.(€¶£î8‘â›‘å2
+;
+java:S1128"Remove this duplicated import.(€¶£î8‘â›‘å2

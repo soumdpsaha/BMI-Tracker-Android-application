@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmi_background"
+    tools:context=".ShowBMI">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="36dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="10dp"
+            android:src="@drawable/baseline_health_and_safety_24"
+            />
+
+        <!-- Row for Height -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/heightLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Height:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/heightTextView" />
+        </LinearLayout>
+
+        <!-- Row for Weight -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/weightLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Weight:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/weightTextView" />
+        </LinearLayout>
+
+        <!-- Row for BMI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/bmiLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Your BMI:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/bmiTextView" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="15dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BMI &lt; 18.5" />
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FF6F00"
+                android:gravity="center"
+                android:text="Underweight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="18.5 &#x2264; BMI &lt; 24.9" />
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#4EE100"
+                android:gravity="center"
+                android:text="Normal weight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="25 &#x2264; BMI &lt; 29.9" />
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FF5100"
+                android:gravity="center"
+                android:text="Overweight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BMI ≥ 30" />
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FF0000"
+                android:gravity="center"
+                android:text="Obese" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Home Page"
+                android:backgroundTint="@color/white"
+                android:textColor="#235300"
+                android:padding="18dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:id="@+id/home_btn"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Logout"
+                android:backgroundTint="@color/white"
+                android:textColor="#235300"
+                android:padding="18dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:id="@+id/logout_btn"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
