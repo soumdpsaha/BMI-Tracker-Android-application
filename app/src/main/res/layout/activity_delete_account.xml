@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A10000"
+    tools:context=".DeleteAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="20dp"
+            android:src="@drawable/baseline_delete_forever_24"
+            />
+
+        <TextView
+            style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:id="@+id/nameLabel"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:text="Are you sure you want to delete your account?\nThis step is irreversible and all your data will be lost forever." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="35dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="NO"
+                android:padding="18dp"
+                android:backgroundTint="#00A6FF"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="YES"
+                android:backgroundTint="#FF0000"
+                android:textColor="@color/white"
+                android:padding="18dp"
+                android:layout_weight="1"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97005F"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".ViewData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:padding="2dp"
+            android:src="@drawable/baseline_account_circle_24"
+            />
+
+        <!-- Row for Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="42dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/nameLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/nameTextView" />
+        </LinearLayout>
+
+        <!-- Row for Date of Birth -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/dobLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date of Birth:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/dobTextView" />
+        </LinearLayout>
+
+        <!-- Row for Height -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/heightLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Height:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/heightTextView" />
+        </LinearLayout>
+
+        <!-- Row for Weight -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LabelStyle"
+                android:id="@+id/weightLabel"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Weight:" />
+
+            <TextView
+                style="@style/ContentStyle"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:id="@+id/weightTextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="42dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Home Page"
+                android:backgroundTint="@color/white"
+                android:textColor="#235300"
+                android:padding="18dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:id="@+id/home_btn"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Logout"
+                android:backgroundTint="@color/white"
+                android:textColor="#235300"
+                android:padding="18dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:id="@+id/logout_btn"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
